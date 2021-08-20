@@ -11,5 +11,6 @@ This example application attempts to illustrate the following:
  - This custom query implementation matches the same set of documents as the original query
  - But, each document match's score is transformed with a custom function
  - This user-provided function can load document stored fields using the same reader as the search.
+ - The results of this second search sort in reversed order when using this custom score.
 
 In summary, this example illustrates how you can perform an arbitrary scoring transformation (at any point in the query hierarchy) and use both the original score and document contents in the function.
